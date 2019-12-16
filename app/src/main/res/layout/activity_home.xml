@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/searchBTN"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="5dp"
+            android:text="Search"
+            android:textSize="10dp"
+            android:background="@android:color/darker_gray" />
+
+        <EditText
+            android:id="@+id/searchET"
+            android:layout_width="match_parent"
+            android:layout_marginTop="4dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="20dp"
+            android:layout_weight="5"
+            android:hint="Search for events"
+            android:background="@android:color/darker_gray"
+            android:maxLines="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/searchLOCET"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="5"
+            android:background="@android:color/darker_gray"
+            android:clickable="true"
+            android:onClick="openDialog"
+            android:hint="Search by Location"
+            android:editable="false"
+            android:maxLines="1"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/searchPVMBTN"
+            android:layout_weight="5"
+            android:layout_marginTop="9dp"
+            android:layout_marginEnd="20dp"
+            android:layout_width="match_parent"
+            android:text="Date"
+            android:layout_height="match_parent" />
+
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:id="@+id/viewLW"
+        android:background="@android:color/darker_gray"/>
+
+
+
+
+</LinearLayout>
