@@ -31,6 +31,9 @@ arraylist of JavaToHumans, which is a Java class containing loots of information
 everything important is thrown into Info class, which is then shown with an adapter. LocJsonToJava
 and LocationToHuman are pretty much same than JsonToJava and JavaToHuman, but with slightly
 different, and they're used to get the location instead of events.
+
+!!Note that the app has been tested with API 19 phone, so it might not work correctly
+with different hardware!!
  */
 
 import android.app.DatePickerDialog;
